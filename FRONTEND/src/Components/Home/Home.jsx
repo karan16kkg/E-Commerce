@@ -42,7 +42,7 @@ const Home = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("https://e-commerce-k1rr.onrender.com/products/get");
+        const response = await axios.get("https://e-commerce-4xsh.onrender.com/products/get");
         setArr(response.data.arr) ;
         console.log(arr); 
         const filterTopwears = arr.filter(product => product.category === 'Topwear') ; 

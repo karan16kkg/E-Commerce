@@ -20,7 +20,7 @@ const Forgot = () => {
 
     const handleSubmit = () => {
         console.log(form);
-        axios.post("https://e-commerce-k1rr.onrender.com/signup/forgot", form)
+        axios.post("https://e-commerce-4xsh.onrender.com/signup/forgot", form)
             .then((response) => {
                 toast(response.data, {
                     position: "top-right",

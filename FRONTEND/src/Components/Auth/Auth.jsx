@@ -21,7 +21,7 @@ const Auth = () => {
   const navigate = useNavigate()
   const handleSubmit = () => {
     if(form.password.length > 3 && form.email.includes("@gmail.com") && form.name.length>0){
-      axios.post("https://e-commerce-k1rr.onrender.com/signup", form)
+      axios.post("https://e-commerce-4xsh.onrender.com/signup", form)
         .then((response) => {
           let x = response.data;
           console.log(x);
@@ -86,7 +86,7 @@ const Auth = () => {
   }
 
   const handleLogin = () => {
-    axios.post("https://e-commerce-k1rr.onrender.com/signup/login", form)
+    axios.post("https://e-commerce-4xsh.onrender.com/signup/login", form)
       .then((response) => {
         let x = response.data;
         console.log(x)

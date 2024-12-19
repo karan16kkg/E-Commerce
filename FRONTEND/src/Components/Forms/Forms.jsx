@@ -34,7 +34,7 @@ const Forms = () => {
 
         const verifyToken = async () => {
           try {
-            const response = await axios.post("https://e-commerce-k1rr.onrender.com/signup/jwtverification", { token });
+            const response = await axios.post("https://e-commerce-4xsh.onrender.com/signup/jwtverification", { token });
             return response.data;
           } catch (error) {
             console.error("Token verification failed:", error);
@@ -59,7 +59,7 @@ const Forms = () => {
 
         setCompanyDetails({ name, image, description });
 
-        const res = await axios.get(`https://e-commerce-k1rr.onrender.com/seller/filter/${name}`, {
+        const res = await axios.get(`https://e-commerce-4xsh.onrender.com/seller/filter/${name}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
 
@@ -80,7 +80,7 @@ const Forms = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`https://e-commerce-k1rr.onrender.com/seller/delete/${id}`);
+      await axios.delete(`https://e-commerce-4xsh.onrender.com/seller/delete/${id}`);
       alert("Product deleted successfully!");
       setProducts((prev) => prev.filter((product) => product._id !== id));  // Update state
     } catch (error) {

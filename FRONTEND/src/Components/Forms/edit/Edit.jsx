@@ -52,7 +52,7 @@ const Edit = () => {
         alert('No product ID found to edit.');
       }
       try {
-        const res = await axios.get(`https://e-commerce-k1rr.onrender.com/seller/fetch/${id}`);
+        const res = await axios.get(`https://e-commerce-4xsh.onrender.com/seller/fetch/${id}`);
         const product = res.data;     // Assuming the response returns the product directly
         
         if (product) {
@@ -75,7 +75,7 @@ const Edit = () => {
     e.preventDefault();
     try {
       await axios.patch(
-        `https://e-commerce-k1rr.onrender.com/seller/edit/${id}`,
+        `https://e-commerce-4xsh.onrender.com/seller/edit/${id}`,
         formData,
       );
       alert("Product updated successfully!");
