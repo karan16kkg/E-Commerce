@@ -1,0 +1,155 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-color: rgba(220, 225, 222, 1);
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    overflow: hidden;
+}
+.login_img{
+    border-radius: 2vh;
+}
+.right{
+    width: 50%;
+    padding-left: 40px;
+}
+.heading{
+    font-size:50px;
+}
+.name{
+    width: 100%;
+    font-size: 20px;
+    line-height: 35px;
+}
+.name input{
+    width:80%;
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding-left: 7px;
+    padding-right: 7px;
+    outline: none;
+}
+.email{
+    width: 100%;
+    font-size: 20px;
+    line-height: 35px;
+}
+.email input{
+    width:80%;
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding-left: 7px;
+    padding-right: 7px;
+    outline: none;
+}
+.password{
+    font-size: 20px;
+    margin-bottom: 40px;
+    line-height: 35px;
+}
+.password input{
+    width:80%;
+    height: 40px;
+    font-size: 18px;
+    padding-left: 7px;
+    padding-right: 7px;
+    outline: none;
+}
+.pass{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.eye{
+    position: absolute;
+    right: 20%;
+}
+.btn{
+    width: 83%;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+    background-color: rgb(28, 27, 27);
+    color: white;
+    cursor: pointer;
+    font-size: 27px;
+    border: none;
+}
+.check1{
+    margin-top: 10px;
+    width: 82%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.check{
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    white-space: nowrap;
+}
+.forg{
+    display: flex;
+    align-items: center;
+
+}
+.forgot{
+    background: transparent;
+    border: none;
+    color: rgb(27, 49, 147);
+    cursor: pointer;
+    white-space: nowrap;
+}
+.acc{
+    margin-top: 13%;
+    background: transparent;
+    border: none;
+    color: rgb(27, 49, 147);
+    cursor: pointer;
+}
+.cont{
+    margin-bottom: 15px;
+}
+@media (max-width: 1200px) {
+    .left{
+        display:none;
+    }
+    .right{
+        width: 100%;
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .main{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .name input{
+        width: 90%;
+    }
+    .email input{
+        width: 90%;
+    }
+    .password input{
+        width: 90%;
+    }
+    .btn{
+        width: 94%;
+    }
+    .eye{
+        right: 10%;
+    }
+}
